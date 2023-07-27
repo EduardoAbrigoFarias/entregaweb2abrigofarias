@@ -33,10 +33,8 @@ ul{
 }
 
 .header{
-    background-color: var(--green);
-    /* box-shadow: 1px 1px 5px 0px var(--grey); */
+    background-color: var(--green);  
     position: sticky;
-    /* top: 0; */
     width: 100%;
     margin-bottom: 10px;
 }
@@ -130,10 +128,9 @@ ul{
     top:0;
 }
 
-
-/*****************************************/
- /*************  Transicion de Titulos  */
- /***************************************/
+ /**********************************************/
+ /*************  Transicion de Titulos H...2,3*/
+ /*********************************************/
  .square {
     width: 100%;
     height: 60px;
@@ -189,14 +186,13 @@ ul{
     justify-self: start;
   }
   
-  /*****************************************/
+ /*****************************************/
  /*************  TERMINO Transicion */
  /***************************************/
 
 /********************************************/
-/*************INICIO
+/*****************INICIO (Inidex.html)
 /*******************************************/
-
   header img {
     width: 80vh;   
     height: 80vh;  
@@ -442,12 +438,7 @@ div.services {
     margin-left :45px;
     margin-right:45px ;
     max-width: 39rem;
-    /* object-fit: cover; */
-    /* -webkit-transition: margin 0.5s ease-out; */
-    /* -moz-transition: margin 0.5s ease-out; */
-    /* -o-transition: margin 0.5s ease-out; */
-    /* box-shadow: 20px 15px 30px -10px rgba(0,0,0,.45) */
-  }
+ }
 
 .itemgallery img:hover {
     transform: scale(1.1);
@@ -538,7 +529,7 @@ div.services {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical /* resize textarea (not horizontally) */;
+    resize: vertical; /* resize textarea de la zona de contacto*/;
   }
 
     input[type=submit] {
@@ -554,9 +545,9 @@ div.services {
         background-color: #45a049;
     }
 
- /*  Esto es para crer TOAST de Contacto - Envio Mail*/
+ /*  Esto es para crer TOAST de Contacto - en el Envio Mail*/
 #snackbar {
-    visibility: hidden; /* Hidden by default. Visible on click */
+    visibility: hidden;
     min-width: 250px; 
     margin-left: -125px; 
     background-color: #599766; 
@@ -564,13 +555,13 @@ div.services {
     text-align: center; 
     border-radius: 2px; 
     padding: 16px; 
-    position: fixed; /* Sit on top  */
+    position: fixed;
     z-index: 1; 
-    left: 50%; /* Center snackbar */
+    left: 50%; 
     bottom: 30px; 
   }
   
-  /* Show  snackbar clic button */
+  /* Muestra snackbar con click button */
   #snackbar.show {
     visibility: visible; 
     /* Take 0.5 seconds to fade in and out the snackbar.
@@ -579,7 +570,7 @@ div.services {
     animation: fadein 2.0s, fadeout 2.0s 2.5s;
   }
   
-  /* snackbar in and out */
+  /* Animaciones */
   @-webkit-keyframes fadein {
     from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}
@@ -616,7 +607,6 @@ div.services {
 /************************************************/
 /************** MEDIA QUERY */
 /************************************************/
-
  @media (min-width: 768px)  {  
 .nav{
         max-height: none;
@@ -647,12 +637,11 @@ div.services {
     color: var(--white);
     font-size: 30px;
     margin-left: 20px;
-    }
+}
 
 /*****************************************/
-/*****************INICIO 
+/*****************INICIO (Inidex.html) 
 /****************************************/
-
 div.planes {
     display: grid;
     height: auto;
@@ -672,7 +661,7 @@ div.planes {
     border-right: 5px solid black;
   }
 
-.planes p.plan-title{
+ .planes p.plan-title{
     font-size: 1.5rem;
     padding: 0;
     margin: 0;
@@ -692,7 +681,7 @@ div.planes {
     font-weight: bold;
   }
 
-header img {
+ header img {
     width: 92%;   
     height: 60vh;
     margin-top: 0px; 
@@ -751,10 +740,9 @@ footer {
     margin-bottom: 10px;
 }
 
-
-/*****************************************/
- /*************  Transicion */
- /***************************************/
+ /**********************************************/
+ /*************  Transicion de Titulos H...2,3*/
+ /*********************************************/
  .square {
     width: 100%;
     height: 70px;
@@ -810,11 +798,12 @@ footer {
     justify-self: start;
   }
   
-/*****************************************/
+ /*****************************************/
  /*************  TERMINO Transicion */
+
+ /*****************************************/
  /*************  NOSOTROS           */
  /***************************************/
-
  .noslogo{
     display: inline-block;
     color: var(--white);
@@ -851,7 +840,7 @@ footer {
 /************************************************/
 /************** SERVICIOS*/
 /************************************************/
-.noslogo{
+.serlogo{
     display: inline-block;
     color: var(--white);
     font-size: 30px;
@@ -919,6 +908,7 @@ div.services {
   .card-img, .card-img-bottom, .card-img-top {
     width: 10%;
 }
+
 /************************************************/
 /************** CLIENTES*/
 /************************************************/
@@ -946,7 +936,7 @@ div.services {
     border-radius: 10px; 
     margin-top: 30px; 
     justify-items: center;
-     column-gap: 5px; 
+    column-gap: 5px; 
     grid-row-gap:10px;
     row-gap: 10p;
   }
@@ -1025,7 +1015,7 @@ div.services {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical /* vertically resize the textarea*/;
+    resize: vertical; /* resize textarea de la zona de contacto*/;
   }
 
   input[type=submit] {
@@ -1041,9 +1031,9 @@ div.services {
         background-color: #45a049;
     }
 
- /*  Esto es para crer TOAST */
-#snackbar {
-    visibility: hidden;
+ /*  Esto es para crer TOAST de Contacto - en el Envio Mail*/
+ #snackbar {
+  visibility: hidden; /* default. Visible en click */
     min-width: 250px; 
     margin-left: -125px; 
     background-color: #599766; 
@@ -1057,7 +1047,7 @@ div.services {
     bottom: 30px; 
   }
   
-  /* snackbar clicki button */
+  /* snackbar click button */
   #snackbar.show {
     visibility: visible; 
     /* Take 0.5 seconds to fade in and out the snackbar.
@@ -1066,7 +1056,7 @@ div.services {
     animation: fadein 2.0s, fadeout 2.0s 2.5s;
   }
   
-  /* Animations */
+  /* Animaciones */
   @-webkit-keyframes fadein {
     from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}
