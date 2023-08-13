@@ -241,13 +241,17 @@ div.planes {
 }
 @media screen and (min-width: 768px) {
   .tech3 {
-    margin-top: 30px;
-    font-size: 25px;
+    margin-top: 10px;
   }
 }
 
 .asesoria {
-  margin-top: 60px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .asesoria {
+    margin-top: 10px;
+  }
 }
 
 footer {
@@ -257,7 +261,7 @@ footer {
   margin-top: 80px;
   align-items: center;
   text-align: center;
-  height: 25vh;
+  height: 45vh;
 }
 footer div p {
   list-style: none;
@@ -287,19 +291,19 @@ footer ul li a {
   margin-top: -340px;
   letter-spacing: 2px;
   border-right: 2px solid #111;
-  font-size: 26px;
+  font-size: 27px;
   border: none;
-  color: rgb(206, 233, 53);
+  color: white;
   padding-top: 30px;
   margin-left: 60px;
 }
 .header div.head p {
-  font-size: 23px;
+  font-size: 24px;
   font-weight: bold;
   margin-top: 150px;
   letter-spacing: 2px;
   padding-left: 60px;
-  color: rgb(206, 233, 53);
+  color: white;
 }
 
 /***********************************************/
@@ -317,6 +321,11 @@ footer ul li a {
   border-top: 4px solid black;
   border-bottom: 4px solid black;
   border-right: 4px solid black;
+}
+
+.card-group-staff {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .noslogo {
@@ -708,6 +717,15 @@ header .clilogo {
   margin-left: 0px;
 }
 
+.h3footer {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.itemgallery img {
+  width: 100%;
+}
+
 /************************************************/
 /************** MEDIA QUERY  Abajo es DESKTOP   */
 /************************************************/
@@ -795,6 +813,14 @@ header .clilogo {
     grid-row-gap: 10px;
     row-gap: 10p;
   }
+  /***********************************************/
+  /*************** CONTACTO
+  /***********************************************/
+  /*  Esto es para crer TOAST de Contacto - en el  Envio Mail*/
+  /* Muestra snackbar con click button */
+  /* Animaciones */
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
   .itemgallery img {
     width: 92%;
     height: 40vh;
@@ -805,10 +831,34 @@ header .clilogo {
   .itemgallery img:hover {
     transform: scale(1.1);
   }
-  /***********************************************/
-  /*************** CONTACTO
-  /***********************************************/
-  /*  Esto es para crer TOAST de Contacto - en el  Envio Mail*/
+}
+@media (min-width: 768px) {
+  footer {
+    background: rgb(0, 99, 248);
+    color: #fff;
+    padding: 10px;
+    margin-top: 80px;
+    align-items: center;
+    text-align: center;
+    height: 30vh;
+  }
+  footer div p {
+    list-style: none;
+    padding: 0;
+    font-size: 12px;
+    margin-bottom: 10px;
+    justify-items: center;
+  }
+  footer ul li a {
+    color: #eee;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 767px) {
+  footer {
+    height: 65vh;
+  }
+}
+@media (min-width: 768px) {
   #snackbar {
     visibility: hidden;
     min-width: 250px;
@@ -823,14 +873,12 @@ header .clilogo {
     left: 50%;
     bottom: 30px;
   }
-  /* Muestra snackbar con click button */
   #snackbar.show {
     visibility: visible;
     /* Take 0.5 seconds to fade in and out the snackbar.
     However, delay the fade out process for 2.5 seconds */
     animation: fadein 2s, fadeout 2s 2.5s;
   }
-  /* Animaciones */
   @keyframes fadein {
     from {
       bottom: 0;
