@@ -76,7 +76,7 @@ ul {
 .menu a {
   margin-top: 20px;
   display: block;
-  padding: 20px;
+  padding: 15px;
   color: var(--white);
   font-weight: bold;
   font-size: 15px;
@@ -271,12 +271,15 @@ footer ul li a {
 }
 
 .header img {
-  width: 85%;
+  width: 90%;
   height: 60vh;
   margin-top: 30px;
-  margin-left: 50px;
+  margin-left: 30px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+  border-radius: 30px;
 }
 .header div.head h1 {
   font-weight: bold;
@@ -305,6 +308,15 @@ footer ul li a {
 /* Card de Bootstrap */
 .card-img, .card-img-bottom, .card-img-top {
   width: 10%;
+}
+
+/* Sobre escribo clase card-group*/
+.card-group {
+  display: flex;
+  flex-flow: row wrap;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  border-right: 4px solid black;
 }
 
 .noslogo {
@@ -412,21 +424,6 @@ div.services {
 /************************************************/
 /********CLIENTES/
 /************************************************/
-/*.itemgallery  { 
-    img {
-      width: 82%;   
-      height: 35vh;
-      margin-top: 20px; 
-      margin-left :45px;
-      margin-right:45px ;
-      max-width: 39rem;
-  }
-
-  & img:hover {
-    transform: scale(1.1);
-  }
-}
-*/
 header .clih2 {
   margin-top: 25px;
   margin-left: 50px;
@@ -639,7 +636,7 @@ header .clilogo {
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical; /* resize textarea de la zona de contacto*/
+  resize: vertical;
 }
 .container input[type=submit] {
   background-color: #04AA6D;
@@ -773,67 +770,6 @@ header .clilogo {
   .planes p.plan-titledet:hover {
     font-weight: bold;
   }
-  /**********************************************/
-  /*************  Transicion de Titulos H...2,3*/
-  /*********************************************/
-  /* .square {
-      width: 100%;
-      height: 70px;
-      border-radius: 8px;
-      background-color: rgb(173, 165, 224);
-      transition-duration: 1000ms;
-      transition-timing-function: ease;
-      padding: 8px;
-    }
-
-    .squaretit {
-      width: 50%;
-      height: 70px;
-      border-radius: 8px;
-      background-color: rgb(173, 165, 224);
-      transition-duration: 1000ms;
-      transition-timing-function: ease;
-      padding: 8px;
-    }
-
-    .square.tp-transform {
-      transition-property: transform;
-    }
-
-    .square.tp-color {
-      transition-property: background-color;
-    }
-
-    .square.tp-both {
-      transition-property: background-color, transform;
-    }
-
-    .square.tp-none {
-      transition-property: none;
-    }
-
-    .square:is(:hover, :focus) {
-      transform: scale(1.3);
-      background-color: cornflowerblue;
-    }
-
-    .wrapper {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 3px;
-    }
-
-    .wrapper .square:nth-child(odd) {
-      justify-self: end;
-    }
-
-    .wrapper .square:nth-child(even) {
-      justify-self: start;
-    }
-
-    */
-  /*****************************************/
-  /*************  TERMINO Transicion */
   /*****************************************/
   /*************  NOSOTROS           */
   /***************************************/
@@ -869,9 +805,6 @@ header .clilogo {
   .itemgallery img:hover {
     transform: scale(1.1);
   }
-  /***********************************************/
-  /*************** STAFF
-  /***********************************************/
   /***********************************************/
   /*************** CONTACTO
   /***********************************************/
