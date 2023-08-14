@@ -74,7 +74,7 @@ ul {
 }
 
 .menu a {
-  margin-top: 20px;
+  margin-top: 15px;
   display: block;
   padding: 15px;
   color: var(--white);
@@ -394,12 +394,13 @@ div.services {
   grid-template-columns: repeat(1, 1fr);
   padding: 20px;
   border-radius: 10px;
+  padding-top: 10px;
 }
 @media screen and (min-width: 768px) {
   div.services {
     grid-template-columns: repeat(2, 1fr);
-    margin-top: -20px;
-    padding: 110px;
+    margin-top: 10px;
+    padding-top: 10px;
   }
 }
 
